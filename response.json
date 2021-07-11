@@ -1,0 +1,96 @@
+[{
+        "tradable": true,
+        "mode": "quote",
+        "instrument_token": 5633,
+        "last_price": 2047.15,
+        "last_quantity": 1,
+        "average_price": 2043.13,
+        "volume": 263725,
+        "buy_quantity": 98049,
+        "sell_quantity": 98782,
+        "ohlc": {
+            "open": 2050.0,
+            "high": 2062.6,
+            "low": 2026.3,
+            "close": 2045.95
+        },
+        "change": 0.05865245973753246
+    },
+    {
+        "tradable": true,
+        "mode": "full",
+        "instrument_token": 738561,
+        "last_price": 2218.3,
+        "last_quantity": 5,
+        "average_price": 2213.05,
+        "volume": 3706007,
+        "buy_quantity": 444677,
+        "sell_quantity": 627748,
+        "ohlc": {
+            "open": 2226.6,
+            "high": 2227.15,
+            "low": 2198.15,
+            "close": 2227.4
+        },
+        "change": -0.40854808296668355,
+        "last_trade_time": [2021, 6, 8, 14, 53, 55],
+        "oi": 0,
+        "oi_day_high": 0,
+        "oi_day_low": 0,
+        "timestamp": [2021, 6, 8, 14, 53, 56],
+        "depth": {
+            "buy": [{
+                    "quantity": 723,
+                    "price": 2218.25,
+                    "orders": 9
+                },
+                {
+                    "quantity": 108,
+                    "price": 2218.2,
+                    "orders": 5
+                },
+                {
+                    "quantity": 4,
+                    "price": 2218.1,
+                    "orders": 1
+                },
+                {
+                    "quantity": 211,
+                    "price": 2218.05,
+                    "orders": 4
+                },
+                {
+                    "quantity": 516,
+                    "price": 2218.0,
+                    "orders": 16
+                }
+            ],
+            "sell": [{
+                    "quantity": 28,
+                    "price": 2218.3,
+                    "orders": 3
+                },
+                {
+                    "quantity": 22,
+                    "price": 2218.35,
+                    "orders": 1
+                },
+                {
+                    "quantity": 2,
+                    "price": 2218.4,
+                    "orders": 1
+                },
+                {
+                    "quantity": 513,
+                    "price": 2218.5,
+                    "orders": 8
+                },
+                {
+                    "quantity": 64,
+                    "price": 2218.7,
+                    "orders": 3
+                }
+            ]
+        }
+    }
+]
