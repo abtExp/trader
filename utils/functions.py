@@ -11,7 +11,7 @@ import math
 	AvgD = average of all down moves in the last N price bars
 	N = the period of RSI
 '''
-def rsi(entries):
+def calc_rsi(entries):
     last_value = entries[0]['ohlc']['close']
 
     up_points, down_points = [], []
@@ -55,6 +55,6 @@ def vwap_ma(entries):
 def calc_vals(entries):
     volume = volume_ma(entries[1:])
     vwap = vwap_ma(entries[1:])
-    rsi = rsi_ma(entries)
+    rsi = calc_rsi(entries)
     oi = open_interest_ma(entries)
     return volume, rsi, vwap, oi

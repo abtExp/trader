@@ -9,6 +9,7 @@ class INSTRUMENT:
         self.ticker = KiteTicker(api_key, access_token)
         self.entries = []
         self.period = 14
+        self.ma_period = 20
         self.rsi = None
         self.vw = None
         self.vol = None
@@ -29,6 +30,7 @@ class INSTRUMENT:
 
     def tick_callback(self):
         def on_tick(ws, ticks):
+            print(ticks)
             self.entries.append(ticks)
             self.calc_indicators()
             self.update_entries()
@@ -36,6 +38,7 @@ class INSTRUMENT:
         return on_tick
 
     def calc_indicators(self):
+        print(self.entries)
         if len(self.entries) >= self.period:
             # Perform Calculations
             self.vol, self.rsi, self.vw, self.oi = calc_vals(self.entries)
@@ -44,6 +47,7 @@ class INSTRUMENT:
         def on_close(ws, code, reason):
             ws.close()
             # Perform Some Other Stuff
+        return on_close
 
     def set_callbacks(self):
         self.ticker.on_connect = self.connect_callback()

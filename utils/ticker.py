@@ -21,6 +21,7 @@ class TICKER:
 		return on_connect
 
 	def print_instrument_ticks(self, ticks):
+		print(ticks)
 		curr_prices = [int(float(i['last_price'])) for i in ticks]
 		self.subscribe_levels(curr_prices)
 

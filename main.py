@@ -44,8 +44,8 @@ class TRADER:
 			url = ''
 			while 'request_token' not in url:
 				url = driver.current_url
-			self.launch_app(driver)
-			# driver.quit()
+			# self.launch_app(driver)
+			driver.quit()
 			self.request_token = url[url.index('request_token')+len('request_token')+1:url.index('&action')]
 		except Exception as e:
 			print('Exception Occured. : {}'.format(e))
